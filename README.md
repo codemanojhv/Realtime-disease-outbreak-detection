@@ -132,4 +132,23 @@ disease-tracker/
 
 ---
 
+## 🧰 **Tech Stack**
+
+- **Frontend:**
+  - [React](https://reactjs.org/) for building the user interface.
+  - [Vite.js](https://vitejs.dev/) for fast development and building tools.
+  - [Tailwind CSS](https://tailwindcss.com/) for styling and responsive design.
+  - [Leaflet](https://leafletjs.com/) for interactive map and heatmap rendering.
+
+- **Backend:**
+  - [Node.js](https://nodejs.org/) for the primary backend server.
+  - [Python](https://www.python.org/) as an alternative backend implementation.
+  - [SQLite](https://www.sqlite.org/index.html) for lightweight database management.
+
+- **Additional Tools:**
+  - [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/) for code quality and formatting.
+  - [TypeScript](https://www.typescriptlang.org/) for type safety.
+
+---
+
 **Start tracking disease outbreaks and make informed decisions to save lives!**
