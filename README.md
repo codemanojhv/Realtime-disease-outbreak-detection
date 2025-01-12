@@ -1,76 +1,135 @@
 # Disease Tracker Platform
 
-## Setup Instructions
+**Disease Tracker Platform** is an innovative tool designed to visualize disease outbreak data in real-time. By aggregating information from hospitals, this platform generates an interactive map with heatmaps to highlight outbreak areas, the number of cases, and their severity. This helps healthcare professionals and policymakers take informed actions quickly.
 
-1. **Prerequisites**
-   - Node.js (v16 or higher)
-   - VS Code
-   - Git
+## Features
 
-2. **VS Code Extensions**
-   Install these recommended extensions:
-   - ESLint
-   - Prettier
-   - TypeScript and JavaScript Language Features
-   - Tailwind CSS IntelliSense
+- **Interactive Map with Heatmaps:**
+  Displays areas of outbreaks based on severity and case count.
 
-3. **Project Setup**
-   ```bash
-   # Clone the repository
-   git clone <repository-url>
-   cd disease-tracker
+- **Real-Time Data Visualization:**
+  Continuously updates with data received from hospitals.
 
-   # Install dependencies
-   npm install
+- **User-Friendly Interface:**
+  Designed for healthcare professionals, policymakers, and researchers.
 
-   # Start the development server
-   npm run dev
+- **Backend Options:**
+  Supports both Node.js and Python backend implementations.
 
-   # In a separate terminal, start the backend server
-   npm run server
-   ```
+---
 
-4. **VS Code Settings**
-   Create `.vscode/settings.json` with recommended settings:
-   ```json
-   {
-     "editor.defaultFormatter": "esbenp.prettier-vscode",
-     "editor.formatOnSave": true,
-     "editor.codeActionsOnSave": {
-       "source.fixAll.eslint": true
-     },
-     "typescript.tsdk": "node_modules/typescript/lib"
-   }
-   ```
+## 🚀 **Setup Instructions**
 
-5. **Environment Setup**
-   Create `.env` file in the root directory:
-   ```env
-   VITE_API_URL=http://localhost:8000
-   ```
+### 1. **Prerequisites**
+Ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (v16 or higher)
+- [VS Code](https://code.visualstudio.com/)
+- [Git](https://git-scm.com/)
 
-## Project Structure
+---
+
+### 2. **Recommended VS Code Extensions**
+Install these extensions for the best development experience:
+- **ESLint**
+- **Prettier**
+- **TypeScript and JavaScript Language Features**
+- **Tailwind CSS IntelliSense**
+
+---
+
+### 3. **Project Setup**
+
+Open a terminal and follow these steps:
+
+```bash
+# Clone the repository
+git clone <repository-url>
+cd disease-tracker
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+
+# In a separate terminal, start the backend server
+npm run server
+```
+
+---
+
+### 4. **VS Code Settings**
+Configure VS Code for seamless formatting and linting. Create `.vscode/settings.json` with the following:
+
+```json
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "typescript.tsdk": "node_modules/typescript/lib"
+}
+```
+
+---
+
+### 5. **Environment Setup**
+Create a `.env` file in the root directory to specify your API URL:
+
+```env
+VITE_API_URL=http://localhost:8000
+```
+
+---
+
+## 📂 **Project Structure**
 
 ```
 disease-tracker/
 ├── src/                    # Frontend source code
 │   ├── components/         # React components
-│   ├── services/          # API services
-│   └── types/             # TypeScript types
-├── server/                # Backend server code
-├── public/                # Static assets
-└── backend/               # Python backend (alternative)
+│   ├── services/           # API services
+│   └── types/              # TypeScript types
+├── server/                 # Backend server code
+├── public/                 # Static assets
+└── backend/                # Python backend (alternative)
 ```
 
-## Available Scripts
+---
 
-- `npm run dev` - Start the frontend development server
-- `npm run server` - Start the Node.js backend server
-- `npm run build` - Build the frontend for production
-- `npm run preview` - Preview the production build locally
+## 🛠️ **Available Scripts**
 
-## Development Notes
+| Script             | Description                              |
+|--------------------|------------------------------------------|
+| `npm run dev`      | Start the frontend development server    |
+| `npm run server`   | Start the Node.js backend server         |
+| `npm run build`    | Build the frontend for production        |
+| `npm run preview`  | Preview the production build locally     |
 
-- Frontend runs on http://localhost:5173
-- Backend API runs on http://localhost:8000
-- SQLite database is automatically created in server/database.sqlite
+---
+
+## 🔍 **Development Notes**
+
+- Frontend runs on: [http://localhost:5173](http://localhost:5173)
+- Backend API runs on: [http://localhost:8000](http://localhost:8000)
+- SQLite database file: `server/database.sqlite` (auto-created)
+
+---
+
+## 🌐 **How It Works**
+
+1. **Data Aggregation:**
+   Hospitals submit real-time outbreak data to the backend.
+
+2. **Heatmap Visualization:**
+   The frontend uses this data to generate an interactive heatmap, showing:
+   - Number of cases
+   - Severity levels
+
+3. **User Interaction:**
+   Users can explore the map to understand the spread and severity of outbreaks.
+
+---
+
+**Start tracking disease outbreaks and make informed decisions to save lives!**
