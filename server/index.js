@@ -65,7 +65,7 @@ app.use(
     origin: [
       'http://localhost:5173',
       'http://localhost:4173', // Vite preview
-      'https://disease-outbreak-tracker.netlify.app', // Replace with your Netlify domain
+      'https://diseaseoutbreaktracker.netlify.app', // Replace with your Netlify domain
     ],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true,
